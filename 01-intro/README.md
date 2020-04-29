@@ -91,12 +91,12 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 ```
 ![inline-flex](img/flex.png)
 
-### display:inline-flex + 100vh 
+### display:flex + 100vh 
 
 #### CSS
 ```
 .container {
-  display:inline-flex;
+  display:flex;
   border:10px solid goldenrod;
   height: 100vh
 }
