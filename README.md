@@ -8,5 +8,7 @@ display: flex # make the container flex
 
 ## display
 `inline-flex` - wraps around the content
+
 `flex` - all the way across
+
 `flex-items` -> all immediate children of container with `display: flex`
