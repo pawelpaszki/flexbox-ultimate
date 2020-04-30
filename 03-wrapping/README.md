@@ -59,7 +59,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .box10 { background:#16a085;}
 ```
 
-### flex-wrap: nowrap
+### flex-wrap: nowrap (note - space shared evenly despite flex-items width equal 300px)
 
 #### CSS
 ```
