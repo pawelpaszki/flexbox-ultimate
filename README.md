@@ -8,7 +8,7 @@ display: flex # make the container flex
 
 [flex-direction: row / column / row-reversed / column-reversed](02-direction/README.md)
 
-[flex-wrap - nowrap / ](03-wrapping/README.md)
+[flex-wrap: nowrap / wrap / wrap-reverse](03-wrapping/README.md)
 
 ## display
 `inline-flex` - wraps around the content
