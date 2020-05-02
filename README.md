@@ -10,6 +10,8 @@ display: flex # make the container flex
 
 [flex-wrap: nowrap / wrap / wrap-reverse](03-wrapping/README.md)
 
+[order](04-ordering/README.md)
+
 ## display
 `inline-flex` - wraps around the content
 
@@ -61,3 +63,8 @@ display: flex # make the container flex
 Note.
 There will be gap between the last flex-item and the end of the browser viewpost, unless the width of the browser is exactly n * width of the flex-item and n is less than the number of the flex-items
 
+`flex: 1` - when set for all `flex-items`, will spread them evenly inside the container
+
+`order` - orders `flex-items` inside a flex container. **Default** order is **0**: `order: 0`
+
+Negative order is also allowed, e.g. `order: -1`
