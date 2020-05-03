@@ -12,6 +12,8 @@ display: flex # make the container flex
 
 [order](04-ordering/README.md)
 
+[justify-content: flex-start / flex-end / center / space-betwee / space-around](05-alignment-centering/README.md)
+
 ## display
 `inline-flex` - wraps around the content
 
@@ -63,8 +65,26 @@ display: flex # make the container flex
 Note.
 There will be gap between the last flex-item and the end of the browser viewpost, unless the width of the browser is exactly n * width of the flex-item and n is less than the number of the flex-items
 
+## order
+
 `flex: 1` - when set for all `flex-items`, will spread them evenly inside the container
 
 `order` - orders `flex-items` inside a flex container. **Default** order is **0**: `order: 0`
 
 Negative order is also allowed, e.g. `order: -1`
+
+## alignment and centering
+
+`justify-content` - how are the items aligned on the `main axis`
+
+`justify-content: flex-start` - items aligned to the start of the container
+
+`justify-content: flex-end` - items aligned to the end of the container
+
+`justify-content: center` - items aligned to the center of the container
+
+`justify-content: space-between` - start first item at the start of the container, last one at the end and divide up the rest of the space between remaining flex-items
+
+`justify-content: space-around` - the white space divided evenly around all flex-items
+
+**Important** - when using `flex-direction: column` to take effect when using `justify-content`, height of the container has to be set
