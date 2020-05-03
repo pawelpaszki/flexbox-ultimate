@@ -12,7 +12,9 @@ display: flex # make the container flex
 
 [order](04-ordering/README.md)
 
-[justify-content: flex-start / flex-end / center / space-betwee / space-around](05-alignment-centering/README.md)
+[justify-content: flex-start / flex-end / center / space-between / space-around](05-alignment-centering/README.md)
+
+[align-items: flex-start / flex-end / center / baseline / stretch](06-align-items/README.md)
 
 ## display
 `inline-flex` - wraps around the content
@@ -88,3 +90,17 @@ Negative order is also allowed, e.g. `order: -1`
 `justify-content: space-around` - the white space divided evenly around all flex-items
 
 **Important** - when using `flex-direction: column` to take effect when using `justify-content`, height of the container has to be set
+
+## align-items
+
+`align-items` is concerned about the `cross axis`
+
+default value for `align-items` is `stretch`
+
+`align-items: center` - vertically aligns items (in default flex-direction) or horizontally aligns items in `flex-direction: column`
+
+`align-items: flex-start` - aligns items at the start of the container (on the `cross axis`)
+
+`align-items: flex-end` - aligns items at the end of the container (on the `cross axis`)
+
+`align-items: baseline` - align bottom of the letters at the same line
