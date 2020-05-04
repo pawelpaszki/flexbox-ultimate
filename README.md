@@ -16,6 +16,8 @@ display: flex # make the container flex
 
 [align-items: flex-start / flex-end / center / baseline / stretch](06-align-items/README.md)
 
+[align-content: flex-start / flex-end / center / space-between / space-around](05-align-content/README.md)
+
 ## display
 `inline-flex` - wraps around the content
 
@@ -104,3 +106,17 @@ default value for `align-items` is `stretch`
 `align-items: flex-end` - aligns items at the end of the container (on the `cross axis`)
 
 `align-items: baseline` - align bottom of the letters at the same line
+
+## align-content
+
+`align-content` - takes the extra space on the `cross axis`. This only works if there are multiple lines of content + if wrapping is enabled
+
+default value for `align-content` is `stretch`
+
+`align-items: flex-start` - aligns content at the start of the container on the `cross axis`. Flex-items only take as much space as needed (e.g. there might be extra room at the bottom). If there is an item that takes more space than other ones, those items will still use the same height across the row
+
+`align-items: flex-end` - aligns content at the end of the container on the `cross axis`
+
+`align-items: space-between` - leftover space will be shared evenly between the end of the first item, beginning of the last item and all remaining items
+
+`align-items: space-around` - leftover space will be shared evenly between to the left and right of each flex-item
