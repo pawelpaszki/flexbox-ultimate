@@ -20,6 +20,8 @@ display: flex # make the container flex
 
 [align-self: flex-start / flex-end / center / baseline / stretch](08-align-self/README.md)
 
+[flex: x](09-flex/README.md)
+
 ## display
 `inline-flex` - wraps around the content
 
@@ -134,3 +136,13 @@ default value for `align-content` is `stretch`
 `align-self: flex-end` - aligns item at the end of the container (on the `cross axis`)
 
 `align-self: baseline` - align bottom of the letters at the same line
+
+## flex
+
+`flex: x` is applied on `flex-items`. It determines what to do with the extra space (if there is any) or what to do if there isn't enough space.
+
+By default wdith of the `flex-items` is set to `auto`
+
+If all flex-items have the same value, their width will be even. Otherwise those with bigger values will get proportionally more extra space
+
+**decimal point values** are allowed for flex property too
