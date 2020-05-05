@@ -16,7 +16,9 @@ display: flex # make the container flex
 
 [align-items: flex-start / flex-end / center / baseline / stretch](06-align-items/README.md)
 
-[align-content: flex-start / flex-end / center / space-between / space-around](05-align-content/README.md)
+[align-content: flex-start / flex-end / center / space-between / space-around](07-align-content/README.md)
+
+[align-self: flex-start / flex-end / center / baseline / stretch](08-align-self/README.md)
 
 ## display
 `inline-flex` - wraps around the content
@@ -120,3 +122,15 @@ default value for `align-content` is `stretch`
 `align-items: space-between` - leftover space will be shared evenly between the end of the first item, beginning of the last item and all remaining items
 
 `align-items: space-around` - leftover space will be shared evenly between to the left and right of each flex-item
+
+## align-self
+
+`align-self` - allows to override align-items property for individual flex-item(s). By default `align-self` is equal to `align-items`, when not set
+
+`align-self: center` - vertically aligns item (in default flex-direction) or horizontally aligns item in `flex-direction: column`
+
+`align-self: flex-start` - aligns item at the start of the container (on the `cross axis`)
+
+`align-self: flex-end` - aligns item at the end of the container (on the `cross axis`)
+
+`align-self: baseline` - align bottom of the letters at the same line

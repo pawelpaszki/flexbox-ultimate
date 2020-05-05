@@ -1,4 +1,4 @@
-# Alignment and centering with align-content
+# Alignment with align-self
 
 ## HTML used:
 ```
@@ -59,7 +59,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .box10 { background:#16a085;}
 ```
 
-### no align-content (or align-content: stretch)
+### no align-self - all items aligned according to align-items value
 
 #### CSS
 ```
@@ -67,16 +67,28 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   display:flex;
   border: 10px solid mistyrose;
   min-height: 100vh;
-  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .box {
   width: 33.33333%;
 }
-```
-![no align-content](img/no-align-content.png)
 
-### align-content: flex-start
+.box2 {
+  padding-bottom: 200px;
+}
+
+.box6 {
+  padding-bottom: 0;
+}
+
+.box9 {
+  padding-bottom: 50px;
+}
+```
+![no align-self](img/no-align-self.png)
+
+### align-self: flex-end
 
 #### CSS
 ```
@@ -84,17 +96,29 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   display:flex;
   border: 10px solid mistyrose;
   min-height: 100vh;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  align-items: flex-start;
 }
 
 .box {
   width: 33.33333%;
 }
-```
-![align-content: flex-start](img/align-content-flex-start.png)
 
-### align-items: flex-end
+.box2 {
+  padding-bottom: 200px;
+}
+
+.box6 {
+  padding-bottom: 0;
+}
+
+.box9 {
+  padding-bottom: 50px;
+  align-self: flex-end;
+}
+```
+![align-self: flex-end](img/align-self-flex-end.png)
+
+### align-self: center
 
 #### CSS
 ```
@@ -102,17 +126,29 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   display:flex;
   border: 10px solid mistyrose;
   min-height: 100vh;
-  flex-wrap: wrap;
-  align-content: flex-end;
+  align-items: flex-start;
 }
 
 .box {
   width: 33.33333%;
 }
-```
-![align-content: flex-end](img/align-content-flex-end.png)
 
-### align-content: space-between
+.box2 {
+  padding-bottom: 200px;
+}
+
+.box6 {
+  padding-bottom: 0;
+}
+
+.box9 {
+  padding-bottom: 50px;
+  align-self: center;
+}
+```
+![align-self: center](img/align-self-center.png)
+
+### align-self: stretch
 
 #### CSS
 ```
@@ -120,67 +156,24 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   display:flex;
   border: 10px solid mistyrose;
   min-height: 100vh;
-  flex-wrap: wrap;
-  align-content: space-between;
+  align-items: flex-start;
 }
 
 .box {
   width: 33.33333%;
 }
-```
-![align-content: space-between](img/align-items-space-between.png)
 
-### align-content: space-around
-
-#### CSS
-```
-.container {
-  display:flex;
-  border: 10px solid mistyrose;
-  min-height: 100vh;
-  flex-wrap: wrap;
-  align-content: space-around;
+.box2 {
+  padding-bottom: 200px;
 }
 
-.box {
-  width: 33.33333%;
-}
-```
-![align-content: space-around](img/align-items-space-around.png)
-
-### align-content: center
-
-#### CSS
-```
-.container {
-  display:flex;
-  border: 10px solid mistyrose;
-  min-height: 100vh;
-  flex-wrap: wrap;
-  align-content: center;
+.box6 {
+  padding-bottom: 0;
 }
 
-.box {
-  width: 33.33333%;
+.box9 {
+  padding-bottom: 50px;
+  align-self: stretch;
 }
 ```
-![align-content: center](img/align-items-center.png)
-
-### align-content: center + justify-content: center
-
-#### CSS
-```
-.container {
-  display:flex;
-  border: 10px solid mistyrose;
-  min-height: 100vh;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-}
-
-.box {
-  width: 33.33333%;
-}
-```
-![align-content: center + align-content: center + justify-content: center](img/align-items-center-justify-content-center.png)
+![align-self: stretch](img/align-self-stretch.png)
