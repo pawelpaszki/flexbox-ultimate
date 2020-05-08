@@ -22,6 +22,8 @@ display: flex # make the container flex
 
 [flex: x](09-flex/README.md)
 
+[flex-grow / flex-shrink / flex-basis: x](10-flex-grow-shrink-basis/README.md)
+
 ## display
 `inline-flex` - wraps around the content
 
@@ -146,3 +148,36 @@ By default wdith of the `flex-items` is set to `auto`
 If all flex-items have the same value, their width will be even. Otherwise those with bigger values will get proportionally more extra space
 
 **decimal point values** are allowed for flex property too
+
+## flex-grow / flex-shrink / flex-basis
+
+`flex: 1` 
+
+is equivalent to 
+
+```
+flex-grow: 1;
+flex-shrink: 1;
+```
+
+`flex-grow` - when we have extra space, how should it be divided among items on the same line. **Default value is: `0`**
+
+if there are two elements and one of them gets e.g. `flex-grow: 10` and other one gets `flex-grow: 1` - the first one will get 10x more extra space allocated (if there is any)
+
+`flex-basis` - how wide (how high if dealing with `flex-direction: column`) should the element be before deciding how to split up the extra space
+
+`flex-shrink` - how to slim the space, if there isn't enough. **Default value is: `1`**
+
+### flex shorthand property
+
+The following: 
+
+```  
+flex-basis: 400px;
+flex-grow: 10;
+flex-shrink: 5;
+```
+
+is the same as:
+
+`flex: 10 5 400px` (flex-grow flex-shrink flex-basis)
