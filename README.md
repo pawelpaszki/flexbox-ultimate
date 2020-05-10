@@ -181,3 +181,13 @@ flex-shrink: 5;
 is the same as:
 
 `flex: 10 5 400px` (flex-grow flex-shrink flex-basis)
+
+### flex-basis with flex-wrap
+
+if no `flex-wrap` is set and all of the items have `flex-basis` set, which adds up to more than the container width, the items will shrink to fit the container. Their width will be less than `flex-basis`
+
+`flex-grow` can make any of the items bigger on given row, if set bigger than the other item(s) on the same row
+
+`flex-grow` doesn't work when `flex-direction` is set to column and the height of the container is not set
+
+if `flex-basis` is set (along with `flex-direction: column`) and the container has `min-height` also set, the container will expand to accomodate extra space for the items. If `height` is set instead of `min-height`, the items will wrap
